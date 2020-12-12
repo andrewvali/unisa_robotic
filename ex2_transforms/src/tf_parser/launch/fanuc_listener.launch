@@ -1,0 +1,6 @@
+<launch>
+
+    <include file="$(find fanuc_moveit_config)/launch/demo.launch"/>
+    <node name="TFparser" pkg="tf_parser" type="fanuc_listener_node" output="screen" />
+
+</launch>

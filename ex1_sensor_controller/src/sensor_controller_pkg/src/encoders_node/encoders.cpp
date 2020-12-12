@@ -2,6 +2,7 @@
 #include <sensor_controller_msgs/SensorMsg.h>
 #include <string>
 #include <iostream>
+#include <math.h>
 
 int main(int argc, char** argv){
     ros::init(argc,argv,"sensor_controller_node");
@@ -18,13 +19,11 @@ int main(int argc, char** argv){
             joint_position.sensors[i].axis.y = (float) rand()/RAND_MAX;
             joint_position.sensors[i].axis.z = (float) rand()/RAND_MAX;
             if(i==0 || i==3 || i==5){
-                joint_position.sensors[i].angle = (float) rand()/RAND_MAX;
-                joint_position.sensors[i].translation = 0;
-                joint_position.sensors[i].type_joint = "Rotoidale";
+                joint_position.sensors[i].position = ((float) rand()/RAND_MAX)*(2*M_PI);
+                joint_position.sensors[i].type_joint = "Revolute";
             }else{
-                joint_position.sensors[i].translation = (float) rand()/RAND_MAX;
-                joint_position.sensors[i].angle = 0;
-                joint_position.sensors[i].type_joint = "Prismatico";
+                joint_position.sensors[i].position = (float) rand()/RAND_MAX;
+                joint_position.sensors[i].type_joint = "Prismatic";
             }
         }
 

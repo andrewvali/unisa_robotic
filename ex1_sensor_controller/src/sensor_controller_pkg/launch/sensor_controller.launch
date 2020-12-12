@@ -1,0 +1,5 @@
+<launch>
+    <node name="controller" pkg="sensor_controller_pkg" type="controller_node" output="screen"/>
+    <node name="encoders" pkg="sensor_controller_pkg" type="encoders_node" output="screen"/>
+
+</launch>

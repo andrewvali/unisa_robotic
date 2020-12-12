@@ -10,7 +10,7 @@
 
 > Derive DH parameters for the Fanuc robot.
 
-* DH parameters are available in this [pdf](https://github.com/andrewvali/unisa_robotic/blob/main/ex2_transforms/src/fanuc_description/doc/fanuc_dh.pdf).
+DH parameters are available in this [pdf](https://github.com/andrewvali/unisa_robotic/blob/main/ex2_transforms/src/fanuc_description/doc/fanuc_dh.pdf).
 
 ## Point 2
 

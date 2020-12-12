@@ -35,8 +35,9 @@ The [JointPosition](https://github.com/andrewvali/unisa_robotic/blob/main/ex1_se
   * Revolute
   * Prismatic.
 * axis: a [Point](http://docs.ros.org/en/melodic/api/geometry_msgs/html/msg/Point.html) representing the direction of the joint axis.
-* angle: for revolute joints, in range ]0, 2pi[.
-* translation: for prismatic joints, in range ]0, 1[.
+* position: 
+  * for revolute joints is in range ]0, 2pi[
+  * for prismatic joints is in range ]0, 1[.
 
 ## Note
 * For `Revolute` joint there is only rotation, so the default value of translation is 0.

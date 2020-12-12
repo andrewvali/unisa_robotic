@@ -27,7 +27,6 @@ void callback(const sensor_controller_msgs::SensorMsg & msg)
 
 int main(int argc, char **argv)
 {
-  // ROS objects
   ros::init(argc, argv, "controller_node");
   ros::NodeHandle n;
   ros::Subscriber sub = n.subscribe("/sensors_topic", 1, callback);

@@ -14,6 +14,7 @@ int main(int argc, char** argv){
     joint_position.sensors.resize(6);
 
     while(ros::ok){
+        // Insert random values for axis and position of the the joints
         for(int i=0;i<6;i++){
             joint_position.sensors[i].axis.x = (float) rand()/RAND_MAX;
             joint_position.sensors[i].axis.y = (float) rand()/RAND_MAX;

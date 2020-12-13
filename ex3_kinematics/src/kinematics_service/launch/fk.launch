@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="FK_server" pkg="kinematics_service" type="fk_server_node" output="screen"/>
+    <node name="FK_client" pkg="kinematics_service" type="fk_client_node" output="screen"/>
+
+</launch>

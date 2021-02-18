@@ -41,3 +41,18 @@ To compute FK run `moveit_config` package and then run this command:
 ```bash
     roslaunch kinematics_service fk.launch
 ```
+
+### Inverse Kinematic
+
+It's possibile to launch two different configurations. Both ones have been generated thanks to moveit setup assistant, but the URDF used does not enforce bounds on joints, while in the second one it has been considered joints with bounds.
+
+No Limit config:
+'''bash
+roslaunch ik_launch.launch urdf_file:="rm-20ia-no_limit.urdf" moveit_config:="fanuc_moveit_config_no_limit" group:="fanuc_arm_no_limit"
+'''
+
+Limit config:
+
+```bash
+roslaunch ik_launch.launch
+```

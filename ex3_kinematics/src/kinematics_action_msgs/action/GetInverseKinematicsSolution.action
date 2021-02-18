@@ -1,0 +1,5 @@
+geometry_msgs/Pose pose 
+---
+moveit_msgs/RobotState[] ik_solutions
+---
+moveit_msgs/RobotState ik_solution
